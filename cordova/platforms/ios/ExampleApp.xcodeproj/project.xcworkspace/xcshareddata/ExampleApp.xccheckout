@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0091323B-E5E7-41B7-8755-938E79143DCC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ExampleApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A49B7440-CC01-4159-85CE-EFAF8FC56295</key>
+		<string>ssh://github.com/jakecraige/ember-cli-cordova-example-app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>cordova/platforms/ios/ExampleApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A49B7440-CC01-4159-85CE-EFAF8FC56295</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/jakecraige/ember-cli-cordova-example-app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A49B7440-CC01-4159-85CE-EFAF8FC56295</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A49B7440-CC01-4159-85CE-EFAF8FC56295</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ember-cli-cordova-example-app</string>
+		</dict>
+	</array>
+</dict>
+</plist>
