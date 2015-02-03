@@ -1,7 +1,21 @@
 /* jshint node: true */
 
+var os     = require('os');
+var ifaces = os.networkInterfaces();
+
+var addresses = [];
+for (var dev in ifaces) {
+  ifaces[dev].forEach(function(details){
+    if(details.family === 'IPv4' && details.address !== '127.0.0.1') {
+      addresses.push(details.address);
+    }
+  });
+}
+
 module.exports = function(environment) {
   var ENV = {
+    modulePrefix: 'example-app',
+    environment: environment,
     baseURL: '/',
     locationType: 'hash',
     EmberENV: {
@@ -14,34 +28,41 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    cordova: {
+      rebuildOnChange: false,
+      emulate: false,
+      emberUrl: 'http://' + addresses[0] + ':4200',
+      liveReload: {
+        enabled: true,
+        platform: 'ios'
+      }
     }
   };
 
   if (environment === 'development') {
-    // LOG_MODULE_RESOLVER is needed for pre-1.6.0
-    ENV.LOG_MODULE_RESOLVER = true;
-
-    ENV.APP.LOG_RESOLVER = true;
-    ENV.APP.LOG_ACTIVE_GENERATION = true;
-    ENV.APP.LOG_MODULE_RESOLVER = true;
+    // ENV.APP.LOG_RESOLVER = true;
+    // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    ENV.APP.LOG_VIEW_LOOKUPS = true;
-
-    ENV.development = true;
-    ENV.appEnv      = 'development';
-    ENV.nodeApiUrl  = 'http://localhost:3000/api/v1';
-    ENV.apiUrl      = 'http://localhost:8080/api/v1';
+    // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
-  if (environment === 'staging') {
-    ENV.staging = true;
-    ENV.appEnv  = 'staging';
+  if (environment === 'test') {
+    // Testem prefers this...
+    ENV.baseURL = '/';
+    ENV.locationType = 'none';
+
+    // keep test console output quieter
+    ENV.APP.LOG_ACTIVE_GENERATION = false;
+    ENV.APP.LOG_VIEW_LOOKUPS = false;
+
+    ENV.APP.rootElement = '#ember-testing';
   }
 
   if (environment === 'production') {
-    ENV.production = true;
-    ENV.appEnv     = 'production';
+
   }
 
   return ENV;

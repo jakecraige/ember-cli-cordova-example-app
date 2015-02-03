@@ -1,9 +1,8 @@
 import Ember from 'ember';
-
-var ENV = ExampleAppENV;
+import config from './config/environment';
 
 var Router = Ember.Router.extend({
-  location: ENV.locationType
+  location: config.locationType
 });
 
 Router.map(function() {

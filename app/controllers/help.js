@@ -1,3 +1,3 @@
-import Modal from 'example-app/controllers/modal';
+import Modal from './modal';
 
 export default Modal.extend();

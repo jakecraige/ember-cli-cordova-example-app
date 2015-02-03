@@ -17,9 +17,6 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-
-app.import('vendor/ember-animated-outlet-mobile/dist/ember-animated-outlet-mobile.css');
-app.import('vendor/ember-animated-outlet-mobile/dist/ember-animated-outlet-mobile.js');
-app.import('vendor/moment/moment.js');
+app.import('bower_components/moment/moment.js');
 
 module.exports = app.toTree();

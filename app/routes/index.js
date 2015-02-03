@@ -24,5 +24,11 @@ export default Ember.Route.extend({
         body: "Aenean suscipit neque quis mauris pellentesque, a blandit eros pharetra. Nulla eget orci nec sem ornare tincidunt a vel elit. Vestibulum at lorem faucibus, tincidunt leo vitae, consequat urna. Nam non ultricies risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed gravida justo. Ut tempus sapien a est ultricies luctus. Sed euismod arcu eu fermentum pulvinar."
       })
     ];
+  },
+
+  actions: {
+    goToPage: function(page) {
+      this.transitionToAnimated('page', {main: 'slideLeft'}, page);
+    }
   }
 });
