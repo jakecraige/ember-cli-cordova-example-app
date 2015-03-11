@@ -36,7 +36,7 @@ module.exports = function(environment) {
       emberUrl: 'http://' + addresses[0] + ':4200',
       liveReload: {
         enabled: true,
-        platform: 'ios'
+        platform: 'android'
       }
     }
   };
