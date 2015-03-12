@@ -19,6 +19,7 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+* update config/environment.js#cordova.liveReload.platform to ios or android 
 
 ## Running / Development
 

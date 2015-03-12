@@ -1,0 +1,204 @@
+html, body, p, ul, li, button, select, textarea, input, h1, h2, h3, h4, h5, button, .button, div {
+  color: #000000; }
+
+a {
+  color: #F15D39; }
+
+li, p {
+  font-size: 1.3rem;
+  line-height: 1.4rem; }
+
+.text-center {
+  text-align: center; }
+
+.underline {
+  text-decoration: underline; }
+
+.full {
+  width: 100%; }
+
+.content-padded {
+  padding: 10px; }
+  .content-padded.no-bottom {
+    padding-bottom: 0; }
+  .content-padded.no-top {
+    padding-top: 0; }
+
+.clear {
+  clear: both; }
+
+.no-border {
+  border: none !important; }
+
+.caps {
+  text-transform: uppercase; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+ul.ui-table-view {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  ul.ui-table-view li {
+    padding: 0 10px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 50px;
+    height: 50px; }
+    ul.ui-table-view li.no-results {
+      border-bottom: 0;
+      text-align: center; }
+    ul.ui-table-view li.disclosure {
+      background-image: url(../assets/disclosure.png);
+      background-position: 96% center;
+      background-size: 10px;
+      background-repeat: no-repeat; }
+    ul.ui-table-view li.no-border {
+      border: 0; }
+  ul.ui-table-view.auto-height li {
+    height: auto;
+    line-height: 1.5rem; }
+  ul.ui-table-view.no-padding li {
+    padding: 0; }
+
+header {
+  background-color: #2E4350;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 65px;
+  padding-top: 20px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3); }
+  header h1 {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 45px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #FFFFFF; }
+  header a {
+    text-decoration: none; }
+  header .left-button, header .right-button {
+    margin: 0;
+    line-height: 45px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #FFFFFF; }
+  header .left-button {
+    position: absolute;
+    z-index: 10;
+    left: 10px; }
+  header .right-button {
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    right: 10px; }
+  header .back-button {
+    background-image: url(../assets/left-arrow.png);
+    background-position: left center;
+    background-size: 11px 20px;
+    background-repeat: no-repeat;
+    padding-left: 1.7rem; }
+  header .group {
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    right: 10px; }
+    header .group .left-button, header .group .right-button {
+      position: static; }
+    header .group .right-button {
+      margin-left: 5px; }
+    header .group .left-button {
+      margin-right: 5px; }
+  header .logo {
+    max-height: 3.5rem; }
+
+html, body, p, ul, li, button, select, textarea, input, h1, h2, h3, h4, h5, button, .button, div {
+  color: #000000; }
+
+a {
+  color: #F15D39; }
+
+li, p {
+  font-size: 1.3rem;
+  line-height: 1.4rem; }
+
+select, input:not([type=submit]):not([type=checkbox]) {
+  width: 100%;
+  height: 45px;
+  border-radius: 4px;
+  padding: 1.5rem 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-appearance: none; }
+
+label {
+  font-weight: 300;
+  margin-bottom: 1rem;
+  display: inline-block; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; }
+  * input, * textarea {
+    -webkit-touch-callout: auto;
+    -webkit-user-select: auto; }
+
+html {
+  font-size: 62.5%;
+  background-color: #F0F4F5; }
+
+body {
+  margin: 0; }
+
+#main {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+  #main.has-tabbar {
+    bottom: 52px; }
+
+#scrollable {
+  height: 101%; }
+
+.modal {
+  position: relative;
+  margin: 45% auto;
+  width: 80%;
+  padding: 2rem 1rem;
+  background: #DEDEDE; }
+  .modal p {
+    margin-top: 0.25rem; }
+  .modal .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 1rem 1.5rem 2rem; }
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8); }
